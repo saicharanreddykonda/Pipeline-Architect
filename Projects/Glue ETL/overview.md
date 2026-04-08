@@ -1,23 +1,26 @@
-Automated Serverless Data Lake ⚙️
+Build an Automated⚙️ Serverless DataLake —
 
-Data engineering teams often spend significant time building and maintaining ETL pipelines. This project demonstrates how to automate the end-to-end data ingestion, cataloging, and transformation process using a fully serverless architecture, reducing operational overhead and improving time-to-value.
+Often Data Engineering Teams spend most of their time on building and optimizing extract, transform, and load (ETL) pipelines. Automating the entire process can reduce the time to value and cost of operations.
+This project explains how to create a fully automated data cataloging and ETL pipeline to transform your data.
+What will you learn?
+✅ Python
+✅ Amazon S3 trigger to invoke a Lambda function
+✅ Glue Crawler
+✅ Creating a CloudWatch Events Rule that triggers on an Event
+✅ Writing ETL job using PySpark and storing data on S3
+✅ Setting up notification for AWS Glue jobs success/failure using SNS
 
-The solution leverages AWS services to build a scalable data pipeline that automatically detects, processes, and transforms incoming data into analytics-ready formats.
 
-What you will learn:
-Python for data processing and automation
-Using Amazon S3 events to trigger AWS Lambda functions
-Implementing AWS Glue Crawlers for automated schema discovery and data cataloging
-Creating CloudWatch/EventBridge rules to trigger workflows based on events
-Developing ETL pipelines using PySpark in AWS Glue
-Storing transformed data in Amazon S3 for analytics consumption
-Configuring Amazon SNS for notifications on Glue job success and failure
-How the Glue Crawler helps:
+Note: How crawler helps -
+    - Suppose today my file is command delimited, Glue can manage. But suppose it changed to pipe in future, the pipeline will fail. But if we have crawler, it auto detects these changes and load the data into catalog tables.
 
-A Glue Crawler automatically detects schema changes in incoming data. For example, if the file format changes from comma-delimited to pipe-delimited, the crawler adapts and updates the Glue Data Catalog accordingly, preventing pipeline failures due to schema inconsistencies.
+Analytics:
+        a. Per Outlet Location Type and outlet Size Sales and count
+        b. Per Outlet Location Type and Size and item type sales and count
+        c. Sales per  item type
 
-Analytics Use Cases:
-Sales analysis by outlet location type and outlet size (including counts and totals)
-Sales analysis by outlet location type, outlet size, and item type
-Sales aggregation by item type
-Architecture 1: Purely on AWS
+
+Architecture 1:
+Purely on AWS
+
+![alt text](image-1.png)

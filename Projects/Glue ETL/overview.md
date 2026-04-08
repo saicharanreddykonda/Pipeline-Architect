@@ -1,4 +1,4 @@
-Build an Automated⚙️ Serverless DataLake —
+Build an Automated⚙️ Serverless DataLake 
 
 Often Data Engineering Teams spend most of their time on building and optimizing extract, transform, and load (ETL) pipelines. Automating the entire process can reduce the time to value and cost of operations.
 This project explains how to create a fully automated data cataloging and ETL pipeline to transform your data.

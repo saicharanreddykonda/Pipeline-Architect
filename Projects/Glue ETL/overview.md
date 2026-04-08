@@ -23,5 +23,4 @@ Analytics:
 Architecture 1:
 Purely on AWS
 
-![alt text](image-1.png)
 https://github.com/saicharanreddykonda/Pipeline-Architect/blob/main/Projects/Glue%20ETL/image.png
